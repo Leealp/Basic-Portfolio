@@ -98,6 +98,8 @@ ul{
 	position: relative;
 	font-family: Arial, sans-serif;
 	margin: 0px 90px 0px 90px;
+	padding-right: 15px;
+	padding-left: 10px;
 }
 
 .center-portfolio{
@@ -108,7 +110,8 @@ ul{
 	top: 35px;
 	margin: 0px 300px 0px 300px; 
 	padding-bottom: 70px;
-	
+	padding-right: 15px;
+	padding-left: 10px;	
 }
 
 .footer{
