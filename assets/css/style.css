@@ -101,10 +101,12 @@ ul{
 .center-portfolio{
 	background-color: #ffffff;
 	border-color: #dddddd;
+	border-style: solid;
 	position: relative;
 	top: 35px;
 	font-family: Arial;
-	margin: 0px 300px 20px 300px; 
+	margin: 0px 300px 0px 300px; 
+	padding-bottom: 70px;
 	
 }
 
@@ -163,33 +165,59 @@ h3{
 	height: 85px;
 }
 
+.div6{
+	position: absolute;
+	text-decoration: underline overline wavy green;
+	/*border: 1px solid red;*/
+	top: 360px;
+	left: 230px;
+	width: 150px;
+	height: 120px;
+}
+
+.div6 p{
+	padding-top: 15px;
+}
+
 .div1 img{
 	position: absolute;
-	top: 70px;
+	top: 80px;
 	left: 40px;
 }
 
 .div4 img{
 	position: absolute;
-	top: 70px;
+	top: 80px;
 	left: 230px;
 }
 
 .div2 img{
 	position: absolute;
-	top: 210px;
+	top: 220px;
 	left: 40px;
 }
 
-.div5 img{
+div .div5{
 	position: absolute;
-	top: 210px;
+	top: 220px;
 	left: 230px;
+}
+
+div .rotateIn{
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+div .zoomIn{
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
 }
 
 .div3 img{
 	position: absolute;
-	top: 350px;
+	top: 360px;
 	left: 40px;
 }
 
@@ -262,10 +290,15 @@ h3{
 	height: 400px;
 	transition: width 2s, height 2s;
 	transition-timing-function: ease-in-out;
-	border-top-left-radius: -50px;
+	border-top-left-radius: 70px;
+    border-bottom-right-radius: 190px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 190px;
+
+   /* border-top-left-radius: -50px;
     border-bottom-right-radius: 150px;
     border-top-right-radius: -50px;
-    border-bottom-left-radius: 150px;
+    border-bottom-left-radius: 150px;*/
 }
 
 .div3 img:hover{
@@ -274,10 +307,10 @@ h3{
 	transition: width 2s, height 2s;
 	transition-timing-function: ease-in-out;
 	transform: skew(10deg,10deg);
-	box-shadow: 50px 50px 50px 50px pink; }
+	box-shadow: 50px 50px 50px 50px #ff99aa; }
 }
 
-.div5 img:hover {
+/*.div5 img {
 	width: 400px;
 	height: 400px;
 	
@@ -285,18 +318,18 @@ h3{
   	-webkit-animation-duration: 4s;
   	animation-name: div5-anim;
 	animation-iteration-count: 3;
-     opacity: .9;
+     opacity: .9;*/
 
 }
 /* Standard syntax */
-@keyframes div5-anim {
+@/*keyframes div5-anim {
   0%   {background-color:red; left:0px; top:0px;}
   25%  {background-color:yellow; left:200px; top:0px;}
   50%  {background-color:blue; left:200px; top:200px;}
   75%  {background-color:green; left:0px; top:200px;}
   100% {background-color:red; left:0px; top:0px;}
 }
-
+*/
 /*.div5 img:hover{
   animation-name: mymove;
   animation-duration: 5s;
